@@ -17,8 +17,8 @@
     "incremental": true,
     "paths": {
       "@/test/*": ["../__test__/*"],
-      "@styles/*": ["../styles/*"],
-      "@utils/*": ["../utils/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
       "@/*": ["./*"]
     }
   },
