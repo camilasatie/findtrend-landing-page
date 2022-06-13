@@ -1,12 +1,6 @@
+import { Button } from '@styles/components/Button';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { styled } from '@/styles/index';
-
-const Text = styled('p', {
-  color: '$green2',
-  fontSize: '$xlarge',
-  fontFamily: '$handwritting',
-});
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Text>Hello darling</Text>
+        <Button color="secondary">Start Free Trial</Button>
       </main>
 
       <footer>footer</footer>
