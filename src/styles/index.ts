@@ -17,10 +17,11 @@ export const {
       buttonHover: '#8CC83A',
       black: '#000',
       black2: '#2B2B2B',
-      grey1: '#8B8B8B',
-      grey2: '#ADADAD',
-      grey3: '#F5F5F5',
-      grey4: '#F1F1F1',
+      grey1: '#545454',
+      grey2: '#8B8B8B',
+      grey3: '#ADADAD',
+      grey4: '#F5F5F5',
+      grey5: '#F1F1F1',
       offWhite: '#fff',
     },
     fonts: {
@@ -42,8 +43,8 @@ export const {
     },
   },
   media: {
-    bp1: '(min-width: 480px)',
-    bp2: '(min-width: 760px)',
-    bp3: '(min-width: 1440px)',
+    bpMobile: '(min-width: 480px)',
+    bpTablet: '(min-width: 760px)',
+    bpDesktop: '(min-width: 1440px)',
   },
 });
