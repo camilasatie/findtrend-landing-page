@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Button } from '@styles/components/Button';
 import { Footer } from '@/components/Footer';
+import { JoinUs } from '@/components/JoinUs';
+import { Container } from '@styles/components/Container';
 
 const Home: NextPage = () => {
   return (
@@ -12,10 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Button color="secondary">Start Free Trial</Button>
-      </main>
-
+      <Container>
+        <JoinUs />
+      </Container>
       <Footer />
     </div>
   );

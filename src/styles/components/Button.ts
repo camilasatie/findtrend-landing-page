@@ -29,6 +29,10 @@ export const Button = styled('button', {
       true: {
         fontSize: '$smalll',
         padding: '12px 24px',
+
+        '@bpTablet': {
+          fontSize: '$base',
+        },
       },
     },
     fullWidth: {
