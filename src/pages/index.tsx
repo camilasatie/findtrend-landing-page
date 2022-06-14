@@ -1,6 +1,7 @@
-import { Button } from '@styles/components/Button';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Button } from '@styles/components/Button';
+import { Footer } from '@/components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
         <Button color="secondary">Start Free Trial</Button>
       </main>
 
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };
