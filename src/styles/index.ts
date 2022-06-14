@@ -38,8 +38,8 @@ export const {
       base: '1.125rem',
       smalll: '0.875rem',
       medium: '1.5rem',
-      large: '2.25rem',
-      xlarge: '4.5rem',
+      large: '2rem', //36
+      xlarge: '4rem',
     },
   },
   media: {
