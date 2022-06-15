@@ -39,7 +39,7 @@ export const {
       smalll: '0.875rem',
       medium: '1.5rem',
       large: '2rem', //36
-      xlarge: '4rem',
+      xlarge: '3.5rem',
     },
   },
   media: {
