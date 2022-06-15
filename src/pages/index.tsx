@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Footer } from '@/components/Footer';
+import { Brands } from '@/components/Brands/Brands';
 import { JoinUs } from '@/components/JoinUs';
+import { Footer } from '@/components/Footer';
+
 import { Container } from '@styles/components/Container';
 
 const Home: NextPage = () => {
@@ -14,6 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Container>
+        <Brands />
         <JoinUs />
       </Container>
       <Footer />

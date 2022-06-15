@@ -4,6 +4,7 @@ export const H2 = styled('h2', {
   fontFamily: '$mono',
   fontSize: '$large',
   fontWeight: '$black',
+  lineHeight: '1.3',
 
   variants: {
     color: {
