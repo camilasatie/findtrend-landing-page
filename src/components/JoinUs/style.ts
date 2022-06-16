@@ -1,6 +1,6 @@
 import { styled } from '@styles/index';
 
-export const Container = styled('div', {
+export const Container = styled('section', {
   backgroundColor: '$primary',
   textAlign: 'center',
   padding: '80px 0',
