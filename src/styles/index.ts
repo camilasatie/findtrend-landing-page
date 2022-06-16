@@ -22,6 +22,7 @@ export const {
       grey3: '#ADADAD',
       grey4: '#F5F5F5',
       grey5: '#F1F1F1',
+      grey6: '#FAFAFA',
       offWhite: '#fff',
     },
     fonts: {
