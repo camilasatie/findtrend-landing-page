@@ -8,13 +8,7 @@ export function Brands() {
     <S.CardContainer>
       {brandsImage.map((image) => (
         <S.Card>
-          <Image
-            src={image.file}
-            alt={image.name}
-            key={image.name}
-            // layout="intrinsic"
-            objectFit="contain"
-          />
+          <Image src={image.file} alt={image.name} key={image.name} />
         </S.Card>
       ))}
     </S.CardContainer>
