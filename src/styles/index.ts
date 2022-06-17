@@ -17,6 +17,8 @@ export const {
       buttonHover: '#8CC83A',
       black: '#000',
       black2: '#2B2B2B',
+      black3: '#030303',
+      black4: '#181818',
       grey1: '#545454',
       grey2: '#8B8B8B',
       grey3: '#ADADAD',

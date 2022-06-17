@@ -15,12 +15,7 @@ export function Platform() {
       <S.SocialMediaContainer>
         {socialMedia.map((social) => (
           <S.SocialCard>
-            <Image
-              src={social.image}
-              alt={social.name}
-              objectFit="contain"
-              className="socialImage"
-            />
+            <Image src={social.image} alt={social.name} objectFit="contain" />
           </S.SocialCard>
         ))}
       </S.SocialMediaContainer>
