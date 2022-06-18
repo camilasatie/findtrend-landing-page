@@ -6,6 +6,7 @@ import { JoinUs } from '@/components/JoinUs';
 import { Footer } from '@/components/Footer';
 
 import { Container } from '@styles/components/Container';
+import { Tabs } from '@/components/Tabs';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Container>
+        <Tabs />
         <Brands />
         <Platform />
         <JoinUs />
