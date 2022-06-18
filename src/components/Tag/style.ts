@@ -3,13 +3,13 @@ import { styled } from '@styles/index';
 export const Tag = styled('div', {
   backgroundColor: '$black3',
   color: '$offWhite',
-  fontSize: '$medium',
+  fontSize: '$base',
   display: 'inline-flex',
   gap: '16px',
   alignItems: 'center',
-  padding: '25px 20px 25px 40px',
+  padding: '21px 20px 21px 32px',
   position: 'relative',
-  width: '340px',
+  width: '290px',
 
   svg: {
     marginLeft: 'auto',
@@ -22,6 +22,12 @@ export const Tag = styled('div', {
         boxShadow: '12px 8px 10px rgba(0, 0, 0, 0.5);',
       },
     },
+  },
+
+  '@bpTablet': {
+    fontSize: '$medium',
+    width: '340px',
+    padding: '25px 20px 25px 40px',
   },
 });
 
