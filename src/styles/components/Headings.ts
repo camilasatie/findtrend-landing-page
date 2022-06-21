@@ -39,3 +39,10 @@ export const H2 = styled('h2', {
     fontSize: '$xlarge',
   },
 });
+
+export const H3 = styled('h3', {
+  fontFamily: '$mono',
+  fontSize: '$medium',
+  fontWeight: '$bold',
+  marginBottom: '8px',
+});
