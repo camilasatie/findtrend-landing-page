@@ -21,6 +21,10 @@ export default class Document extends NextDocument {
             href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@400;600;700;900&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

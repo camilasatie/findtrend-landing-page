@@ -30,6 +30,7 @@ export const {
     fonts: {
       mono: 'Raleway, sans-serif',
       handwritting: 'Architects Daughter, cursive',
+      icons: 'Material Icons',
     },
     fontWeights: {
       regular: '400',
@@ -41,7 +42,7 @@ export const {
       base: '1.125rem',
       smalll: '0.875rem',
       medium: '1.5rem',
-      large: '2rem', //36
+      large: '2rem',
       xlarge: '3.5rem',
     },
   },
