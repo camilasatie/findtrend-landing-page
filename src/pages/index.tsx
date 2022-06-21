@@ -1,12 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Tabs } from '@/components/Tabs';
 import { Brands } from '@/components/Brands/Brands';
 import { Platform } from '@/components/Platform';
+import { Plans } from '@/components/Plans';
 import { JoinUs } from '@/components/JoinUs';
 import { Footer } from '@/components/Footer';
 
 import { Container } from '@styles/components/Container';
-import { Tabs } from '@/components/Tabs';
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <Tabs />
         <Brands />
         <Platform />
+        <Plans />
         <JoinUs />
       </Container>
       <Footer />
