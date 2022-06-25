@@ -1,6 +1,7 @@
 import { styled } from '@styles/index';
 
 export const Container = styled('div', {
+  textAlign: 'left',
   backgroundColor: '$offWhite',
   borderRadius: '16px',
   width: '339px',
@@ -25,6 +26,7 @@ export const Container = styled('div', {
   '@bpDesktop': {
     width: '360px',
     height: '640px',
+    margin: '0',
   },
 });
 

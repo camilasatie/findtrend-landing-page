@@ -5,6 +5,7 @@ import * as S from './style';
 interface ICard {
   planName: string;
   planDescription: string;
+  planType: string;
   planPrice: number;
   planList: {
     item: string;
@@ -17,6 +18,7 @@ export function Card({
   planDescription,
   planPrice,
   planList,
+  planType,
   isRecommended,
 }: ICard) {
   return (
@@ -27,7 +29,7 @@ export function Card({
 
       <S.PriceWrapper>
         <S.Price>${planPrice}</S.Price>
-        <span>/Month</span>
+        <span>/{planType}</span>
       </S.PriceWrapper>
 
       <S.List>
