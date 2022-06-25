@@ -1,6 +1,25 @@
 import { styled } from '@styles/index';
 import * as SwitchPrimitive from '@radix-ui/react-switch';
 
+const Container = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+});
+
+const Label = styled('label', {
+  color: '$offWhite',
+  fontFamily: '$mono',
+  fontSize: '$base',
+  variants: {
+    checked: {
+      true: {
+        color: '$grey2',
+      },
+    },
+  },
+});
+
 const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',
   width: 104,
@@ -12,6 +31,7 @@ const StyledSwitch = styled(SwitchPrimitive.Root, {
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
   '&:focus': { boxShadow: `0 0 0 2px black` },
   '&[data-state="checked"]': { backgroundColor: '$offWhite' },
+  margin: '0 24px',
 
   '@bpDesktop': {
     height: 52,
@@ -38,10 +58,37 @@ const StyledThumb = styled(SwitchPrimitive.Thumb, {
   },
 });
 
-const Swtich = () => (
-  <StyledSwitch defaultChecked id="s1">
-    <StyledThumb />
-  </StyledSwitch>
+interface ISwitch {
+  id: string;
+  leftLabel: string;
+  rightLabel: string;
+  checked?: boolean;
+  onCheckedChange: (checked: boolean) => void;
+}
+
+const Switch = ({
+  id,
+  leftLabel,
+  rightLabel,
+  checked,
+  onCheckedChange,
+}: ISwitch) => (
+  <Container>
+    <Label htmlFor={id} checked={checked}>
+      {leftLabel}
+    </Label>
+    <StyledSwitch
+      defaultChecked
+      id={id}
+      // checked={checked}
+      onCheckedChange={onCheckedChange}
+    >
+      <StyledThumb />
+    </StyledSwitch>
+    <Label htmlFor={id} checked={!checked}>
+      {rightLabel}
+    </Label>
+  </Container>
 );
 
-export default Swtich;
+export default Switch;

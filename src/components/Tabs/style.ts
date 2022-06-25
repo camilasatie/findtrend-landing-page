@@ -23,7 +23,7 @@ export const ArrowTopContainer = styled('div', {
 
   '@bpDesktop': {
     top: '60px',
-    right: '-160px',
+    right: '-140px',
   },
 });
 
