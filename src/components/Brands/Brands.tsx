@@ -7,7 +7,7 @@ export function Brands() {
   const rennderBrands = () => (
     <S.CardContainer>
       {brandsImage.map((image) => (
-        <S.Card>
+        <S.Card key={image.name}>
           <Image src={image.file} alt={image.name} key={image.name} />
         </S.Card>
       ))}

@@ -13,15 +13,15 @@ import Social8 from '../../../public/images/social-8.png';
 export const tweets = [
   {
     image: Tweet1,
-    name: 'Tweet from Elon Musk',
+    name: 'Tweet from Elon Musk #1',
   },
   {
     image: Tweet2,
-    name: 'Tweet from Elon Musk',
+    name: 'Tweet from Elon Musk #2',
   },
   {
     image: Tweet3,
-    name: 'Tweet from Elon Musk',
+    name: 'Tweet from Elon Musk #3',
   },
 ];
 

@@ -34,7 +34,7 @@ export function Card({
 
       <S.List>
         {planList.map((item) => (
-          <S.ListItem>{item.item}</S.ListItem>
+          <S.ListItem key={item.item}>{item.item}</S.ListItem>
         ))}
       </S.List>
 
