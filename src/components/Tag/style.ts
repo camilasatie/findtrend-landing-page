@@ -19,7 +19,7 @@ export const Tag = styled('div', {
     hasShadow: {
       true: {
         backgroundColor: '$black4',
-        boxShadow: '12px 8px 10px rgba(0, 0, 0, 0.5);',
+        boxShadow: '12px 8px 10px rgba(0, 0, 0, 0.3)',
       },
     },
   },
