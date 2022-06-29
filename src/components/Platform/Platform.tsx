@@ -14,7 +14,7 @@ export function Platform() {
 
       <S.SocialMediaContainer>
         {socialMedia.map((social) => (
-          <S.SocialCard>
+          <S.SocialCard key={social.name}>
             <Image src={social.image} alt={social.name} objectFit="contain" />
           </S.SocialCard>
         ))}
@@ -23,6 +23,7 @@ export function Platform() {
       <S.TwitterContainer>
         {tweets.map((tweet) => (
           <Image
+            key={tweet.name}
             src={tweet.image}
             alt={tweet.name}
             layout="responsive"

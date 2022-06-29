@@ -7,7 +7,7 @@ export function Brands() {
   const rennderBrands = () => (
     <S.CardContainer>
       {brandsImage.map((image) => (
-        <S.Card>
+        <S.Card key={image.name}>
           <Image src={image.file} alt={image.name} key={image.name} />
         </S.Card>
       ))}
@@ -16,7 +16,7 @@ export function Brands() {
 
   return (
     <S.Container>
-      <H2>
+      <H2 color="white">
         Findtrend helps you to increase your productivity and reduce your
         computer's memory load,{' '}
         <S.Highlight>

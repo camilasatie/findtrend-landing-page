@@ -16,12 +16,13 @@ type TSocialMedia =
   | 'findtrend';
 
 interface ITag {
-  children: React.ReactNode;
+  className?: string;
   hasShadow?: boolean;
+  children: React.ReactNode;
   socialMedia?: TSocialMedia;
 }
 
-export function Tag({ children, hasShadow, socialMedia }: ITag) {
+export function Tag({ className, children, hasShadow, socialMedia }: ITag) {
   function setSocialMediaIcon(socialType: TSocialMedia) {
     const socialICons = {
       facebook: FacebookIcon,
@@ -35,7 +36,7 @@ export function Tag({ children, hasShadow, socialMedia }: ITag) {
   }
 
   return (
-    <S.Tag hasShadow={hasShadow}>
+    <S.Tag hasShadow={hasShadow} className={className}>
       {socialMedia && (
         <Image
           src={setSocialMediaIcon(socialMedia)}

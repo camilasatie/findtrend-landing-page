@@ -10,6 +10,9 @@ export const Tag = styled('div', {
   padding: '21px 20px 21px 32px',
   position: 'relative',
   width: '290px',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
 
   svg: {
     marginLeft: 'auto',
@@ -19,7 +22,7 @@ export const Tag = styled('div', {
     hasShadow: {
       true: {
         backgroundColor: '$black4',
-        boxShadow: '12px 8px 10px rgba(0, 0, 0, 0.5);',
+        boxShadow: '12px 8px 10px #030303',
       },
     },
   },

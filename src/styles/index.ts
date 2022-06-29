@@ -39,11 +39,11 @@ export const {
       black: '900',
     },
     fontSizes: {
-      base: '1.125rem',
       smalll: '0.875rem',
+      base: '1.125rem',
       medium: '1.5rem',
       large: '2rem',
-      xlarge: '3.5rem',
+      giant: '4.5rem',
     },
   },
   media: {
