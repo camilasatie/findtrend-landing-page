@@ -1,10 +1,25 @@
+import Image from 'next/image';
+import { useWindowSize } from 'react-use';
 import { Button } from '@styles/components/Button';
 import { Tag } from '../Tag';
+import BackgroundMobile from '../../../public/images/background-mobile.png';
+import BackgroundDesktop from '../../../public/images/background-desktop.png';
+
 import * as S from './style';
 
 export function Header() {
+  const { width } = useWindowSize();
   return (
     <S.Header>
+      <S.BgWrapper>
+        <Image
+          alt="Mountains"
+          src={width > 375 ? BackgroundDesktop : BackgroundMobile}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </S.BgWrapper>
       <S.Title>Minimize your tabs. Find the trends!</S.Title>
       <S.Paragraph>
         Don't let your computer memories consumes all of those browswer tabs.

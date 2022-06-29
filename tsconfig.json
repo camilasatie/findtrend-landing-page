@@ -18,6 +18,7 @@
     "paths": {
       "@/test/*": ["../__test__/*"],
       "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
       "@utils/*": ["utils/*"],
       "@/*": ["./*"]
     }
