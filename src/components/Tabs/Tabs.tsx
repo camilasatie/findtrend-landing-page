@@ -1,8 +1,8 @@
+import Image from 'next/image';
 import { H2 } from '@styles/components/Headings';
 import { Tag } from '../Tag';
 import Arrow from '../../../public/images/arrow.svg';
 import * as S from './style';
-import Image from 'next/image';
 
 export function Tabs() {
   return (

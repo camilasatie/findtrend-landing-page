@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useWindowSize } from 'react-use';
 import { Button } from '@styles/components/Button';
 import { Tag } from '../Tag';
+import Arrow from '../../../public/images/arrow-white.svg';
 import BackgroundMobile from '../../../public/images/background-mobile.png';
 import BackgroundDesktop from '../../../public/images/background-desktop.png';
 
@@ -20,12 +21,27 @@ export function Header() {
           quality={100}
         />
       </S.BgWrapper>
+
       <S.Title>Minimize your tabs. Find the trends!</S.Title>
+
       <S.Paragraph>
         Don't let your computer memories consumes all of those browswer tabs.
         Findtrend let you gathers all your favorites website into one place.
       </S.Paragraph>
-      <Button color="primary">Get Started 🔥</Button>
+
+      <S.ButtonWrapper>
+        <Button color="primary" className="btnHeader">
+          Get Started 🔥
+        </Button>
+
+        <S.ArrowTopContainer>
+          All research start from here
+          <S.ArrowRight>
+            <Image src={Arrow} alt="arrow" />
+          </S.ArrowRight>
+        </S.ArrowTopContainer>
+      </S.ButtonWrapper>
+
       <S.TagsWrapper>
         <Tag socialMedia="twitter" hasShadow className="twitter">
           Criptopunk-Search

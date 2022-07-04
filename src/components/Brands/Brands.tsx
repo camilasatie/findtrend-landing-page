@@ -16,7 +16,7 @@ export function Brands() {
 
   return (
     <S.Container>
-      <H2 color="white">
+      <H2 color="black">
         Findtrend helps you to increase your productivity and reduce your
         computer's memory load,{' '}
         <S.Highlight>
@@ -25,7 +25,9 @@ export function Brands() {
       </H2>
 
       <S.BrandsContainer>
-        <H2 textAlign="center">Findtrend make +1000 Startup grow</H2>
+        <H2 textAlign="center" color="black">
+          Findtrend make +1000 Startup grow
+        </H2>
         {rennderBrands()}
       </S.BrandsContainer>
     </S.Container>

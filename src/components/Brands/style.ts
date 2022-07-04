@@ -1,7 +1,7 @@
 import { styled } from '@styles/index';
 
 export const Container = styled('section', {
-  backgroundColor: '$black',
+  backgroundColor: '$offWhite',
   padding: '80px 18px',
 
   '@bpTablet': {
