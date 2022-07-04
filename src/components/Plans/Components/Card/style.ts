@@ -51,7 +51,7 @@ export const PriceWrapper = styled('div', {
 });
 
 export const Price = styled('span', {
-  fontSize: '$xlarge',
+  fontSize: '$giant',
   fontWeight: '$semiBold',
   paddingRight: '8px',
 });
